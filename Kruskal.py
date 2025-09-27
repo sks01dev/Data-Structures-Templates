@@ -34,6 +34,16 @@ class UnionFind:
             self.parent[par2] = par1
 
         return True
+
+"""
+Time Complexity (TC): O(E log E)
+
+Sorting edges dominates, union-find is almost constant per edge.
+
+Space Complexity (SC): O(V + E)
+
+Store parent/rank arrays + all edges.
+"""
     
 
 # Kruskal Algorithm
@@ -65,5 +75,6 @@ def main():
     return 0
 
 main()
+
 
 """
